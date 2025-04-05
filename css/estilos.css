@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background-color: #000000;
+  background-color: #add8e6;
   color: white;
   width: 100%;
   padding: 15px 0;
@@ -53,15 +53,6 @@ nav ul li a img {
   height: 20px;
 }
 
-.logo {
-  margin: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #add8e6;
-}
-
 .logosup {
   width: 30%;
   height: auto;
@@ -83,12 +74,7 @@ main {
   flex-direction: column;
 }
 
-.intro p,
-.quienes-somos,
-.nuestra-historia,
-.productos,
-.contacto,
-.mapa {
+.intro p, .quienes-somos, .nuestra-historia, .productos, .contacto, .mapa {
   margin-bottom: 20px;
 }
 
@@ -101,10 +87,7 @@ main {
   height: auto;
 }
 
-.quienes-somos,
-.nuestra-historia,
-.productos,
-.contacto {
+.quienes-somos, .nuestra-historia, .productos, .contacto {
   flex: 2;
 }
 
@@ -151,9 +134,7 @@ main {
   background-color: darkgreen;
 }
 
-.contacto,
-.horarios,
-.formas-de-pago {
+.contacto, .horarios, .formas-de-pago {
   margin-bottom: 50px;
   text-align: center;
   display: flex;
@@ -167,8 +148,7 @@ main {
 .contacto label {
   margin-top: 10px;
 }
-.contacto input,
-.contacto textarea {
+.contacto input, .contacto textarea {
   margin-top: 5px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -188,13 +168,12 @@ main {
   background-color: darkorchid;
 }
 
-.horarios p,
-.formas-de-pago p {
+.horarios p, .formas-de-pago p {
   margin-top: 10px;
 }
 
 footer {
-  background-color: #cc0bf3;
+  background-color: cadetblue;
   padding: 10px;
   text-align: center;
   width: 100%;

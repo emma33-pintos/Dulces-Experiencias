@@ -1,5 +1,5 @@
 $body-bg: #add8e6;
-$header-bg: #000000;
+$header-bg: #add8e6;
 $header-padding: 15px 0;
 $nav-list-style: square;
 $nav-margin-top: 10px;
@@ -65,7 +65,7 @@ nav {
         color: $nav-link-color;
         text-decoration: none;
         font-weight: bold;
-        @include transition(all 0.3s);
+       @include transition (all 0.3s);
         &:hover {
           text-decoration: underline;
         }
@@ -79,13 +79,6 @@ nav {
       }
     }
   }
-}
-
-.logo {
-  margin: auto;
-  width: 100%;
-  @include flex-center;
-  background-color: $body-bg;
 }
 
 .logosup {
@@ -107,12 +100,7 @@ main {
   flex-direction: column;
 }
 
-.intro p,
-.quienes-somos,
-.nuestra-historia,
-.productos,
-.contacto,
-.mapa {
+.intro p,.quienes-somos,.nuestra-historia,.productos,.contacto,.mapa {
   margin-bottom: 20px;
 }
 
@@ -125,10 +113,7 @@ main {
   }
 }
 
-.quienes-somos,
-.nuestra-historia,
-.productos,
-.contacto {
+.quienes-somos,.nuestra-historia,.productos,.contacto {
   flex: 2;
 }
 
@@ -177,9 +162,7 @@ main {
   }
 }
 
-.contacto,
-.horarios,
-.formas-de-pago {
+.contacto,.horarios,.formas-de-pago {
   margin-bottom: 50px;
   text-align: center;
   display: flex;
@@ -194,8 +177,7 @@ main {
   label {
     margin-top: 10px;
   }
-  input,
-  textarea {
+  input,textarea {
     margin-top: 5px;
     padding: 10px;
     border: 1px solid $product-border;
@@ -216,8 +198,7 @@ main {
   }
 }
 
-.horarios,
-.formas-de-pago {
+.horarios,.formas-de-pago {
   p {
     margin-top: 10px;
   }
@@ -283,3 +264,4 @@ h2 {
     font-size: 14px;
   }
 }
+
