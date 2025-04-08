@@ -1,7 +1,7 @@
 $body-bg: #add8e6;
 $header-bg: #add8e6;
-$header-padding: 15px 0;
-$nav-list-style: square;
+$header-padding: 20px;
+$nav-list-style: none;
 $nav-margin-top: 10px;
 $nav-link-color: white;
 $active-link-color: red;
@@ -18,57 +18,37 @@ $h2-color: #555;
 $h2-horarios-color: purple;
 $h2-formas-de-pago-color: green;
 $black: #000000;
-@mixin transition($args...) {
-  transition: $args;
-}
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: $body-bg;
   margin: 0;
   padding: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 header {
   background-color: $header-bg;
-  color: white;
-  width: 100%;
   padding: $header-padding;
   text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-shadow: 0 2px 5px rgba($black, 0.1);
-  z-index: 1000;
-  h1 {
-    margin: 0;
-    font-size: 24px;
-  }
 }
 nav {
   ul {
     list-style-type: $nav-list-style;
     padding: 0;
-    margin-top: $nav-margin-top;
     li {
       display: inline;
-      margin: 0 15px;
-
+      margin: 0 10px;
       a {
         color: $nav-link-color;
         text-decoration: none;
-        font-weight: bold;
-       @include transition (all 0.3s);
-        &:hover {
-          text-decoration: underline;
-        }
         &.active {
           color: $active-link-color;
         }
@@ -80,20 +60,17 @@ nav {
     }
   }
 }
-
 .logosup {
   width: 30%;
   height: auto;
   object-fit: cover;
   transform: scale(0.4);
 }
-
 .barranav {
   @include flex-center;
   flex-direction: row-reverse;
   background-color: $barranav-bg;
 }
-
 main {
   padding: 20px;
   display: flex;
@@ -155,7 +132,6 @@ main {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    @include transition(background-color 0.3s);
     &:hover {
       background-color: $button-green-hover;
     }
@@ -191,7 +167,6 @@ main {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    @include transition(background-color 0.3s);
     &:hover {
       background-color: $contact-btn-hover;
     }

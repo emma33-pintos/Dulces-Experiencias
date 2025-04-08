@@ -32,14 +32,7 @@ nav ul li a img{
     width: 20px;
     height: 20px;
 }
-.logo{
-    margin: auto;
-    width: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: #add8e6;
-}
+
 .logosup{
     width: 30%;
     height: auto;
